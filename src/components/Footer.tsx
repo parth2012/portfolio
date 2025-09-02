@@ -1,14 +1,13 @@
-
-import React from 'react'
-import { motion } from 'framer-motion'
-import {Heart, ArrowUp} from 'lucide-react'
+import React from "react";
+import { motion } from "framer-motion";
+import { Heart, ArrowUp } from "lucide-react";
 
 const Footer = () => {
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' })
-  }
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
 
-  const currentYear = new Date().getFullYear()
+  const currentYear = new Date().getFullYear();
 
   return (
     <footer className="bg-black text-white py-12 relative">
@@ -22,10 +21,12 @@ const Footer = () => {
             transition={{ duration: 0.6 }}
             className="space-y-4"
           >
-            <h3 className="text-3xl font-black">PARTH.DEV</h3>
+            <h3 className="text-3xl font-black">
+              <img src="/portfolio/images/logo_white.svg"></img>
+            </h3>
             <p className="font-medium text-gray-300">
-              Creating bold digital experiences that make an impact. 
-              Let's build something amazing together!
+              Creating bold digital experiences that make an impact. Let's build
+              something amazing together!
             </p>
           </motion.div>
 
@@ -39,20 +40,24 @@ const Footer = () => {
           >
             <h4 className="text-xl font-black text-yellow-400">QUICK LINKS</h4>
             <div className="space-y-2">
-              {['Home', 'About', 'Skills', 'Portfolio', 'Contact'].map((link) => (
-                <button
-                  key={link}
-                  onClick={() => {
-                    const element = document.querySelector(`#${link.toLowerCase()}`)
-                    if (element) {
-                      element.scrollIntoView({ behavior: 'smooth' })
-                    }
-                  }}
-                  className="block font-bold text-gray-300 hover:text-yellow-400 transition-colors duration-200"
-                >
-                  {link}
-                </button>
-              ))}
+              {["Home", "About", "Skills", "Portfolio", "Contact"].map(
+                (link) => (
+                  <button
+                    key={link}
+                    onClick={() => {
+                      const element = document.querySelector(
+                        `#${link.toLowerCase()}`
+                      );
+                      if (element) {
+                        element.scrollIntoView({ behavior: "smooth" });
+                      }
+                    }}
+                    className="block font-bold text-gray-300 hover:text-yellow-400 transition-colors duration-200"
+                  >
+                    {link}
+                  </button>
+                )
+              )}
             </div>
           </motion.div>
 
@@ -67,11 +72,11 @@ const Footer = () => {
             <h4 className="text-xl font-black text-pink-400">SERVICES</h4>
             <div className="space-y-2">
               {[
-                'Web Design',
-                'UI/UX Design',
-                'Frontend Development',
-                'Responsive Design',
-                'Brand Identity'
+                "Web Design",
+                "UI/UX Design",
+                "Frontend Development",
+                "Responsive Design",
+                "Brand Identity",
               ].map((service) => (
                 <div key={service} className="font-bold text-gray-300">
                   {service}
@@ -132,7 +137,7 @@ const Footer = () => {
         ))}
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
