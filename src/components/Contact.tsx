@@ -17,7 +17,7 @@ const Contact = () => {
 
     // Replace with your EmailJS credentials
     const serviceId = "service_ttieoe5";
-    const templateId = "template_e0e9u08";
+    const templateId = "template_ri9jw1b";
     const publicKey = "E9nbBbcw68G_LxD6e";
 
     emailjs
