@@ -10,7 +10,7 @@ const Portfolio = () => {
       id: 1,
       title: "Creative Lerning",
       category: "mobile",
-      image: "/images/creative_learning.png",
+      image: "/portfolio/images/creative_learning.png",
       description: "Lerning Academy Website",
       tech: ["Wordpress", "HTML/CSS", "Elementor", "CMS"],
       liveUrl: "https://myclacademy.com/",
@@ -20,7 +20,7 @@ const Portfolio = () => {
       id: 2,
       title: "Lopez",
       category: "mobile",
-      image: "/images/lopez.png",
+      image: "/portfolio/images/lopez.png",
       description:
         "Lopez Auto Insurance is an insurance company seeking to provide our valued customers with a variety of affordable insurance options.",
       tech: ["Wordpress", "HTML/CSS", "wpBakery", "CMS"],
@@ -31,7 +31,7 @@ const Portfolio = () => {
       id: 3,
       title: "American Health Care Academy",
       category: "mobile",
-      image: "/images/health_care.png",
+      image: "/portfolio/images/health_care.png",
       description:
         "American Health Care Academy (AHCA) comes in. It is our goal to provide comprehensive and effective online CPR and healthcare training courses to help save lives.",
       tech: ["Wordpress", "HTML/CSS", "Elementor", "JavaScript", "CMS"],
@@ -42,7 +42,7 @@ const Portfolio = () => {
       id: 4,
       title: "LINEA | Paolo",
       category: "web",
-      image: "/images/linea.png",
+      image: "/portfolio/images/linea.png",
       description:
         "Experience the extraordinary comfort, quality, and style of LINEA Paolo – women's fashion footwear ",
       tech: ["Magento", "CMS", "HTML/Less"],
@@ -53,7 +53,7 @@ const Portfolio = () => {
       id: 5,
       title: "RC Mumbai",
       category: "web",
-      image: "/images/rcmumbai.png",
+      image: "/portfolio/images/rcmumbai.png",
       description:
         "Empower individuals and industries by providing top-quality drone components.",
       tech: ["Magento", "CMS", "HTML/Less"],
@@ -64,7 +64,7 @@ const Portfolio = () => {
       id: 6,
       title: "Unsfarms",
       category: "web",
-      image: "/images/unsfarms.png",
+      image: "/portfolio/images/unsfarms.png",
       description:
         "Unsfarms provide high-quality, farm-fresh produce grown in urban areas",
       tech: ["Magento", "HTML/Less", "Bootstrap", "PHP"],
@@ -75,7 +75,7 @@ const Portfolio = () => {
       id: 7,
       title: "Trymaintain",
       category: "web",
-      image: "/images/trymaintain.png",
+      image: "/portfolio/images/trymaintain.png",
       description:
         "Trymaintain bring transparency to the aesthetic and wellness industry.",
       tech: ["Magento", "HTML/Less", "Bootstrap", "PHP"],
@@ -86,7 +86,7 @@ const Portfolio = () => {
       id: 8,
       title: "Restaurant Website Design",
       category: "design",
-      image: "/images/restaurant_website_design.png",
+      image: "/portfolio/images/restaurant_website_design.png",
       description:
         "This project showcases a modern, user-friendly restaurant website design.",
       tech: ["Figma", "typography", "Prototype"],
@@ -98,7 +98,7 @@ const Portfolio = () => {
       id: 9,
       title: "US Tax Deals Website Design",
       category: "design",
-      image: "/images/ustax.png",
+      image: "/portfolio/images/ustax.png",
       description:
         "This project features a sleek and professional website design for a tax services company, US Tax Deals.",
       tech: ["Figma", "typography", "Prototype"],

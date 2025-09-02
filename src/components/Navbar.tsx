@@ -46,7 +46,11 @@ const Navbar = () => {
             whileHover={{ scale: 1.05 }}
             className="text-2xl font-black text-black"
           >
-            <img src="/images/logo1.svg" alt="Logo" className="w-full h-auto" />
+            <img
+              src="/portfolio/images/logo1.svg"
+              alt="Logo"
+              className="w-full h-auto"
+            />
           </motion.div>
 
           {/* Desktop Menu */}
