@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Mail, Phone, MapPin, Send, Linkedin } from "lucide-react";
 import toast from "react-hot-toast";
+import emailjs from "emailjs-com";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -13,9 +14,36 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Simulate form submission
-    toast.success("Message sent successfully! I'll get back to you soon.");
-    setFormData({ name: "", email: "", subject: "", message: "" });
+
+    // Replace with your EmailJS credentials
+    const serviceId = "service_ttieoe5";
+    const templateId = "template_e0e9u08";
+    const publicKey = "E9nbBbcw68G_LxD6e";
+
+    emailjs
+      .send(
+        serviceId,
+        templateId,
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+        },
+        publicKey
+      )
+      .then(
+        () => {
+          toast.success(
+            "Message sent successfully! I'll get back to you soon."
+          );
+          setFormData({ name: "", email: "", subject: "", message: "" });
+        },
+        (error) => {
+          console.error(error);
+          toast.error("Something went wrong. Please try again.");
+        }
+      );
   };
 
   const handleChange = (
@@ -49,19 +77,17 @@ const Contact = () => {
   ];
 
   const socialLinks = [
-    // { icon: Github, url: '#', color: 'bg-black text-white' },
     {
       icon: Linkedin,
       url: "https://www.linkedin.com/in/pthaker",
       color: "bg-blue-600 text-white",
     },
-    // { icon: Twitter, url: '#', color: 'bg-blue-400 text-white' },
-    // { icon: Instagram, url: '#', color: 'bg-pink-500 text-white' }
   ];
 
   return (
     <section id="contact" className="py-20 bg-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Title */}
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
