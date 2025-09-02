@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { ExternalLink, Github, Eye } from "lucide-react";
+import { ExternalLink, Eye } from "lucide-react";
 
 const Portfolio = () => {
   const [filter, setFilter] = useState("all");

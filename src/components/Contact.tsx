@@ -1,15 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import {
-  Mail,
-  Phone,
-  MapPin,
-  Send,
-  Github,
-  Linkedin,
-  Twitter,
-  Instagram,
-} from "lucide-react";
+import { Mail, Phone, MapPin, Send, Linkedin } from "lucide-react";
 import toast from "react-hot-toast";
 
 const Contact = () => {
