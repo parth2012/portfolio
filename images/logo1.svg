@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 200">
+  <title>Parth Thaker Logo - Signature Style</title>
+  <style>
+    .script{font-family:'Brush Script MT','Pacifico','cursive';font-size:88px;fill:#2b2f33}
+    .tagline{font-family:'Helvetica Neue',Arial,sans-serif;font-size:28px;fill:#555}
+  </style>
+  <!-- Handwritten style full name -->
+  <text x="40" y="120" class="script">Parth Thaker</text>
+  <text x="50" y="170" class="tagline">Creative Professional</text>
+</svg>
