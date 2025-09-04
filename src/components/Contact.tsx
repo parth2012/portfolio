@@ -18,7 +18,7 @@ const Contact = () => {
     // Replace with your EmailJS credentials
     const serviceId = "service_ttieoe5";
     const templateId = "template_ri9jw1b";
-    const publicKey = "E9nbBbcw68G_LxD6e";
+    const publicKey = "chc6sS4R08IR0JvAd";
 
     emailjs
       .send(
@@ -130,7 +130,7 @@ const Contact = () => {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full p-3 border-3 border-black font-medium focus:outline-none focus:ring-0 focus:border-yellow-400"
+                    className="w-full p-3 border-2 border-black font-medium focus:outline-none focus:ring-0 focus:border-yellow-400"
                     placeholder="John Doe"
                   />
                 </div>
@@ -144,7 +144,7 @@ const Contact = () => {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full p-3 border-3 border-black font-medium focus:outline-none focus:ring-0 focus:border-yellow-400"
+                    className="w-full p-3 border-2 border-black font-medium focus:outline-none focus:ring-0 focus:border-yellow-400"
                     placeholder="john@example.com"
                   />
                 </div>
@@ -160,7 +160,7 @@ const Contact = () => {
                   value={formData.subject}
                   onChange={handleChange}
                   required
-                  className="w-full p-3 border-3 border-black font-medium focus:outline-none focus:ring-0 focus:border-yellow-400"
+                  className="w-full p-3 border-2 border-black font-medium focus:outline-none focus:ring-0 focus:border-yellow-400"
                   placeholder="Project Discussion"
                 />
               </div>
@@ -175,7 +175,7 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   rows={6}
-                  className="w-full p-3 border-3 border-black font-medium focus:outline-none focus:ring-0 focus:border-yellow-400 resize-none"
+                  className="w-full p-3 border-2 border-black font-medium focus:outline-none focus:ring-0 focus:border-yellow-400 resize-none"
                   placeholder="Tell me about your project..."
                 />
               </div>
