@@ -106,6 +106,27 @@ const Portfolio = () => {
         "https://www.figma.com/proto/2JIyCTt2LkiiYhrjlhIpss/US_Tax_Deals?node-id=141-853&t=pToRsB05181csANZ-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1",
       githubUrl: "#",
     },
+    {
+      id: 10,
+      title: "Apple Grove",
+      category: "mobile",
+      image: "/portfolio/images/apple_grove.png",
+      description: "Academic Website for Toodler pre School",
+      tech: ["Wordpress", "HTML/CSS", "Elementor", "CMS"],
+      liveUrl: "https://applegrovemontessori.com/",
+      githubUrl: "#",
+    },
+    {
+      id: 11,
+      title: "Nabni Developemt",
+      category: "mobile",
+      image: "/portfolio/images/nabni.png",
+      description:
+        "Emirati real estate developer, where visionary design converges with unwavering integrity, innovation, and meticulous attention to detail.",
+      tech: ["Wordpress", "HTML/CSS", "Elementor", "CMS"],
+      liveUrl: "https://nabnidevelopments.com/",
+      githubUrl: "#",
+    },
   ];
 
   const categories = [
