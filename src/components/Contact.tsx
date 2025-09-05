@@ -61,12 +61,14 @@ const Contact = () => {
       label: "Email",
       value: "parththaker1991@gmail.com",
       color: "bg-yellow-400",
+      link: "mailto:parththaker1991@gmail.com",
     },
     {
       icon: Phone,
       label: "Phone",
       value: "+91 9601350850",
       color: "bg-pink-400",
+      link: "tel:+919601350850",
     },
     {
       icon: MapPin,
@@ -105,9 +107,9 @@ const Contact = () => {
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-12">
+        <div className="grid lg:grid-cols-1 lg:gap-12">
           {/* Contact Form */}
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -190,7 +192,7 @@ const Contact = () => {
                 <Send size={20} />
               </motion.button>
             </form>
-          </motion.div>
+          </motion.div> */}
 
           {/* Contact Info */}
           <motion.div
@@ -198,7 +200,7 @@ const Contact = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="space-y-8"
+            className="space-y-8 grid lg:grid-cols-2 lg:gap-12"
           >
             {/* Contact Details */}
             <div className="space-y-6">
@@ -217,51 +219,61 @@ const Contact = () => {
                     <h4 className="font-black text-black text-lg">
                       {info.label}
                     </h4>
-                    <p className="font-bold text-black">{info.value}</p>
+                    <p className="font-bold text-black">
+                      {" "}
+                      <a href={info.link} className="hover:underline">
+                        {info.value}
+                      </a>
+                    </p>
                   </div>
                 </motion.div>
               ))}
             </div>
+            <div className="space-y-6">
+              {/* Social Links */}
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+                className="bg-white border-4 border-black p-6 shadow-[8px_8px_0px_0px_#000] transform rotate-1"
+              >
+                <h4 className="text-2xl font-black text-black mb-4">
+                  FOLLOW ME
+                </h4>
+                <div className="flex space-x-4">
+                  {socialLinks.map((social, index) => (
+                    <motion.a
+                      key={index}
+                      href={social.url}
+                      whileHover={{ scale: 1.1, rotate: 10 }}
+                      whileTap={{ scale: 0.9 }}
+                      className={`${social.color} p-3 border-3 border-black shadow-[4px_4px_0px_0px_#000] hover:shadow-[6px_6px_0px_0px_#000] transition-all duration-200`}
+                      target="_blank"
+                    >
+                      <social.icon size={24} />
+                    </motion.a>
+                  ))}
+                </div>
+              </motion.div>
 
-            {/* Social Links */}
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-              className="bg-white border-4 border-black p-6 shadow-[8px_8px_0px_0px_#000] transform rotate-1"
-            >
-              <h4 className="text-2xl font-black text-black mb-4">FOLLOW ME</h4>
-              <div className="flex space-x-4">
-                {socialLinks.map((social, index) => (
-                  <motion.a
-                    key={index}
-                    href={social.url}
-                    whileHover={{ scale: 1.1, rotate: 10 }}
-                    whileTap={{ scale: 0.9 }}
-                    className={`${social.color} p-3 border-3 border-black shadow-[4px_4px_0px_0px_#000] hover:shadow-[6px_6px_0px_0px_#000] transition-all duration-200`}
-                    target="_blank"
-                  >
-                    <social.icon size={24} />
-                  </motion.a>
-                ))}
-              </div>
-            </motion.div>
-
-            {/* Call to Action */}
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8, delay: 0.6 }}
-              className="bg-black text-white border-4 border-black p-6 shadow-[8px_8px_0px_0px_#fff] transform -rotate-1"
-            >
-              <h4 className="text-2xl font-black mb-2">LET'S WORK TOGETHER!</h4>
-              <p className="font-bold">
-                I'm always excited to take on new challenges and create amazing
-                digital experiences. Drop me a line!
-              </p>
-            </motion.div>
+              {/* Call to Action */}
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8, delay: 0.6 }}
+                className="bg-black text-white border-4 border-black p-6 shadow-[8px_8px_0px_0px_#fff] transform -rotate-1"
+              >
+                <h4 className="text-2xl font-black mb-2">
+                  LET'S WORK TOGETHER!
+                </h4>
+                <p className="font-bold">
+                  I'm always excited to take on new challenges and create
+                  amazing digital experiences. Drop me a line!
+                </p>
+              </motion.div>
+            </div>
           </motion.div>
         </div>
       </div>
