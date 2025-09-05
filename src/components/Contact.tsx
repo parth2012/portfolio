@@ -1,59 +1,59 @@
-import React, { useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
-import { Mail, Phone, MapPin, Send, Linkedin } from "lucide-react";
-import toast from "react-hot-toast";
-import emailjs from "emailjs-com";
+import { Mail, Phone, MapPin, Linkedin } from "lucide-react";
+// import toast from "react-hot-toast";
+// import emailjs from "emailjs-com";
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    subject: "",
-    message: "",
-  });
+  // const [formData, setFormData] = useState({
+  //   name: "",
+  //   email: "",
+  //   subject: "",
+  //   message: "",
+  // });
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
+  // const handleSubmit = (e: React.FormEvent) => {
+  //   e.preventDefault();
 
-    // Replace with your EmailJS credentials
-    const serviceId = "service_ttieoe5";
-    const templateId = "template_ri9jw1b";
-    const publicKey = "chc6sS4R08IR0JvAd";
+  //   // Replace with your EmailJS credentials
+  //   const serviceId = "service_ttieoe5";
+  //   const templateId = "template_ri9jw1b";
+  //   const publicKey = "chc6sS4R08IR0JvAd";
 
-    emailjs
-      .send(
-        serviceId,
-        templateId,
-        {
-          name: formData.name,
-          email: formData.email,
-          subject: formData.subject,
-          message: formData.message,
-        },
-        publicKey
-      )
-      .then(
-        () => {
-          toast.success(
-            "Message sent successfully! I'll get back to you soon."
-          );
-          setFormData({ name: "", email: "", subject: "", message: "" });
-        },
-        (error) => {
-          console.error(error);
-          toast.error("Something went wrong. Please try again.");
-        }
-      );
-  };
+  //   emailjs
+  //     .send(
+  //       serviceId,
+  //       templateId,
+  //       {
+  //         name: formData.name,
+  //         email: formData.email,
+  //         subject: formData.subject,
+  //         message: formData.message,
+  //       },
+  //       publicKey
+  //     )
+  //     .then(
+  //       () => {
+  //         toast.success(
+  //           "Message sent successfully! I'll get back to you soon."
+  //         );
+  //         setFormData({ name: "", email: "", subject: "", message: "" });
+  //       },
+  //       (error) => {
+  //         console.error(error);
+  //         toast.error("Something went wrong. Please try again.");
+  //       }
+  //     );
+  // };
 
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
-  };
+  // const handleChange = (
+  //   e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  // ) => {
+  //   setFormData({
+  //     ...formData,
+  //     [e.target.name]: e.target.value,
+  //   });
+  // };
 
   const contactInfo = [
     {

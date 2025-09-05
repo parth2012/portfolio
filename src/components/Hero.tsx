@@ -6,6 +6,11 @@ const Hero = () => {
   const scrollToAbout = () => {
     document.querySelector("#about")?.scrollIntoView({ behavior: "smooth" });
   };
+  const scrollToWork = () => {
+    document
+      .querySelector("#portfolio")
+      ?.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <section
@@ -87,7 +92,7 @@ const Hero = () => {
             <motion.button
               whileHover={{ scale: 1.05, rotate: 2 }}
               whileTap={{ scale: 0.95 }}
-              onClick={scrollToAbout}
+              onClick={scrollToWork}
               className="bg-black text-white px-8 py-4 border-4 border-black font-bold text-lg shadow-[8px_8px_0px_0px_#fff] hover:shadow-[12px_12px_0px_0px_#fff] transition-all duration-200 flex items-center gap-2"
             >
               VIEW MY WORK
@@ -113,8 +118,9 @@ const Hero = () => {
         className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
         animate={{ y: [0, 10, 0] }}
         transition={{ duration: 2, repeat: Infinity }}
+        onClick={scrollToAbout}
       >
-        <div className="w-6 h-10 border-4 border-black bg-white rounded-full flex justify-center">
+        <div className="w-6 h-10 border-4 border-black bg-white rounded-full flex justify-center cursor-pointer">
           <div className="w-1 h-3 bg-black rounded-full mt-2"></div>
         </div>
       </motion.div>
