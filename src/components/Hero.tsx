@@ -102,8 +102,8 @@ const Hero = () => {
             <motion.a
               whileHover={{ scale: 1.05, rotate: -2 }}
               whileTap={{ scale: 0.95 }}
-              href="images/parth_thaker.pdf"
-              download="parth_thaker.pdf"
+              href="images/Parth_thaker.pdf"
+              download="Parth_thaker.pdf"
               className="bg-white text-black px-8 py-4 border-4 border-black font-bold text-lg shadow-[8px_8px_0px_0px_#000] hover:shadow-[12px_12px_0px_0px_#000] transition-all duration-200 flex items-center gap-2"
             >
               DOWNLOAD CV
