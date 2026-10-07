@@ -9,7 +9,7 @@ const Portfolio = () => {
     {
       id: 1,
       title: "Creative Lerning",
-      category: "mobile",
+      category: "wordpress",
       image: "/portfolio/images/creative_learning.png",
       description: "Lerning Academy Website",
       tech: ["Wordpress", "HTML/CSS", "Elementor", "CMS"],
@@ -19,7 +19,7 @@ const Portfolio = () => {
     {
       id: 2,
       title: "Lopez",
-      category: "mobile",
+      category: "wordpress",
       image: "/portfolio/images/lopez.png",
       description:
         "Lopez Auto Insurance is an insurance company seeking to provide our valued customers with a variety of affordable insurance options.",
@@ -30,7 +30,7 @@ const Portfolio = () => {
     {
       id: 3,
       title: "American Health Care Academy",
-      category: "mobile",
+      category: "wordpress",
       image: "/portfolio/images/health_care.png",
       description:
         "American Health Care Academy (AHCA) comes in. It is our goal to provide comprehensive and effective online CPR and healthcare training courses to help save lives.",
@@ -41,7 +41,7 @@ const Portfolio = () => {
     {
       id: 4,
       title: "LINEA | Paolo",
-      category: "web",
+      category: "magento",
       image: "/portfolio/images/linea.png",
       description:
         "Experience the extraordinary comfort, quality, and style of LINEA Paolo – women's fashion footwear ",
@@ -52,7 +52,7 @@ const Portfolio = () => {
     {
       id: 5,
       title: "RC Mumbai",
-      category: "web",
+      category: "magento",
       image: "/portfolio/images/rcmumbai.png",
       description:
         "Empower individuals and industries by providing top-quality drone components.",
@@ -63,7 +63,7 @@ const Portfolio = () => {
     {
       id: 6,
       title: "Unsfarms",
-      category: "web",
+      category: "magento",
       image: "/portfolio/images/unsfarms.png",
       description:
         "Unsfarms provide high-quality, farm-fresh produce grown in urban areas",
@@ -74,7 +74,7 @@ const Portfolio = () => {
     {
       id: 7,
       title: "Trymaintain",
-      category: "web",
+      category: "magento",
       image: "/portfolio/images/trymaintain.png",
       description:
         "Trymaintain bring transparency to the aesthetic and wellness industry.",
@@ -109,7 +109,7 @@ const Portfolio = () => {
     {
       id: 10,
       title: "Apple Grove",
-      category: "mobile",
+      category: "wordpress",
       image: "/portfolio/images/apple_grove.png",
       description: "Academic Website for Toodler pre School",
       tech: ["Wordpress", "HTML/CSS", "Elementor", "CMS"],
@@ -119,7 +119,7 @@ const Portfolio = () => {
     {
       id: 11,
       title: "Nabni Developemt",
-      category: "mobile",
+      category: "wordpress",
       image: "/portfolio/images/nabni.png",
       description:
         "Emirati real estate developer, where visionary design converges with unwavering integrity, innovation, and meticulous attention to detail.",
@@ -127,12 +127,45 @@ const Portfolio = () => {
       liveUrl: "https://nabnidevelopments.com/",
       githubUrl: "#",
     },
+    {
+      id: 12,
+      title: "Soul2sole",
+      category: "wordpress",
+      image: "/portfolio/images/soul2sole.png",
+      description:
+        "Soul2sole strive to provide students with a great learning experience through quality teaching and a positive environment.",
+      tech: ["Wordpress", "HTML/CSS", "Elementor", "CMS"],
+      liveUrl: "https://soul2sole.ca/",
+      githubUrl: "#",
+    },
+    {
+      id: 13,
+      title: "Gamingamerica",
+      category: "wordpress",
+      image: "/portfolio/images/gamingamerica.png",
+      description:
+        "Gaming America is a news portal providing in-depth coverage of the iGaming and land-based industries across North, Latin, and South America.",
+      tech: ["Wordpress", "HTML/CSS", "Elementor", "CMS"],
+      liveUrl: "https://gamingamerica.com/",
+      githubUrl: "#",
+    },
+    {
+      id: 14,
+      title: "Gameshub",
+      category: "wordpress",
+      image: "/portfolio/images/gameshub.png",
+      description:
+        "GamesHub.com is an expert guide to the wide world of video and casino gaming, owned and operated by Gameshub.",
+      tech: ["Wordpress", "HTML/CSS", "Elementor", "CMS"],
+      liveUrl: "https://www.gameshub.com/",
+      githubUrl: "#",
+    },
   ];
 
   const categories = [
     { id: "all", name: "ALL PROJECTS" },
-    { id: "web", name: "Magento" },
-    { id: "mobile", name: "Wordpress" },
+    { id: "magento", name: "Magento" },
+    { id: "wordpress", name: "Wordpress" },
     { id: "design", name: "UI/UX DESIGN" },
   ];
 
