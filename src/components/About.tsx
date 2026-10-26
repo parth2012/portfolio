@@ -39,7 +39,7 @@ const About = () => {
                 Creative Web Designer
               </h3>
               <p className="text-lg font-medium text-black leading-relaxed mb-4">
-                I'm Parth Thaker, a passionate web designer with 7+ years of
+                I'm Parth Thaker, a passionate web designer with 8+ years of
                 experience creating bold, functional, and user-friendly digital
                 experiences. I specialize in modern web design, UI/UX, and
                 bringing creative visions to life through code.
